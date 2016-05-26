@@ -2,7 +2,7 @@ Use `run.sh` to fetch Drupal 8.1-dev and start containers.
 
   After run console on web container:
 
-  drush site-install standard --db-url=mysql://d8:d8@192.168.99.100/d8 --db-su=root --db-su-pw=d8root
+  drush site-install standard --db-url=mysql://d8:d8@DOCKER_URL/d8 --db-su=root --db-su-pw=d8root
 
   drush en components
 
@@ -17,11 +17,11 @@ Use `run.sh` to fetch Drupal 8.1-dev and start containers.
   cd themes/amazing_name
   npm install
 
-  modify options.drupalURL to yours web container url
+  modify options.drupalURL to yours web container url(DOCKER_URL)
 
 
   1) gulp, gulp watch
-  2) styleguide http://192.168.99.100:8081/themes/amazing_name/styleguide/
+  2) styleguide http://DOCKER_URL:8081/themes/amazing_name/styleguide/
 
 
 
