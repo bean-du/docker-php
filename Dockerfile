@@ -23,3 +23,13 @@ WORKDIR /srv
 EXPOSE 80
 
 CMD php -t /srv -S 0.0.0.0:80
+
+
+
+#adding nodejs and gulp
+
+RUN apk update && apk add nodejs && rm -rf /var/cache/apk/* && mkdir /data
+
+RUN npm install -g gulp && \
+  apk add --no-cache make g++ python && \
+  npm install -g node-sass
