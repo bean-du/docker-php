@@ -3,6 +3,8 @@ web:
 #  image: php7
   ports:
     - "8081:80"
+    - "3000:3000"
+    - "3001:3001"
   volumes:
     - ./drupal:/srv
   links:
