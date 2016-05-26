@@ -2,7 +2,7 @@ Use `run.sh` to fetch Drupal 8.1-dev and start containers.
 
   After run console on web container:
 
-  drush site-install standard --db-url=mysql://d8:d8@DOCKER_URL/d8 --db-su=root --db-su-pw=d8root
+  drush site-install standard --db-url=mysql://d8:d8@mysql/d8 --db-su=root --db-su-pw=d8root
 
   drush en components
 
